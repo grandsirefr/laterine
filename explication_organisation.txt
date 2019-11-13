@@ -1,0 +1,6 @@
+Pour l'organisation de ma bdd je vais tout dabord travailler avec deux table temporaire afin de remplir 4 autre table une table pour lister les etats une table pour lister le milieux(rural ou urbain), une table pour le nombre de type de laterine et une table pour les matériaux utilisé. pour la table des laterines je n'ai pas fait le choix de l'exploser car il n'y est pas censé avoir de répétition donc chaque ligne est unique de plus cette suite de nombre entre le nombre de fosse , le nombre de salle d'eau ect est spécifique a un état et si il est rural ou urbain. J'ai réfléchis de la meme facon pour la table des matériaux employés dans les laterines. une fois les 4 table creer je ferais une table de jointure entre la table etats et la table rural ou urbain cette table me serviras de repère nommons la environment. je creerais une autre table de jointure qui seras lié avec la table environment et la table de type de fosse et meme chose entre la table environment et la table de type de matériaux.
+
+la table state et la table type seront creer afin d'éviter les répétitions.
+la table environment les lieras et auras un id unique
+la table equipment et materials seront sur deux table différentes pour dissocier les données
+les tables equipenvi et matenvi seront deux tables de jointure pour lier les tables equipment et materials avec la table environment.
